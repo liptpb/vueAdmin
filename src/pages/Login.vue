@@ -17,6 +17,7 @@
 
 <script>
   import { requestLogin } from '../api/api';
+  // import req from '../api/axios'
   import NProgress from 'nprogress'
   export default {
     data() {
@@ -41,6 +42,10 @@
     },
     methods: {
       handleReset2() {
+        // export const groupDetail = param => {
+        //     debugger
+        //         return req.get('/RestHome/GroupDetail',param)
+        // }
         this.$refs.ruleForm2.resetFields();
       },
       handleSubmit2(ev) {
